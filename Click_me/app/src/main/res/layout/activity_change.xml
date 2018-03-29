@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiaoxiong.click_me.ChangeActivity">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textSize="18sp"
+        android:text="返回"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="140dp"
+        android:text="修改密码"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/oldpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/edit_oldpwd"
+        android:layout_toStartOf="@+id/edit_oldpwd"
+        android:text="原密码："
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/edit_oldpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/oldpwd"
+        android:layout_alignBottom="@+id/oldpwd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="请输入原密码" />
+
+    <TextView
+        android:id="@+id/newpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oldpwd"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/edit_newpwd"
+        android:layout_toStartOf="@+id/edit_newpwd"
+        android:text="新密码："
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/edit_newpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newpwd"
+        android:layout_alignBottom="@+id/newpwd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="请输入新密码" />
+
+    <TextView
+        android:id="@+id/re_newpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newpwd"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/edit_repwd"
+        android:layout_toStartOf="@+id/edit_repwd"
+        android:text="确认密码："
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/edit_repwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/re_newpwd"
+        android:layout_alignBottom="@+id/re_newpwd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:ems="10"
+        android:hint="确认密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/re_newpwd"
+        android:layout_below="@+id/edit_repwd"
+        android:text="修改"/>
+</RelativeLayout>
